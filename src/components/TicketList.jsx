@@ -1,5 +1,6 @@
 import React from "react";
 import Ticket from "./Ticket";
+import { Link } from 'react-router-dom';
 
 var masterTicketList = [
   {
@@ -29,6 +30,8 @@ function TicketList(){
           issue={ticket.issue}
           key={index}/>
       )}
+      <Link to="/newticket"><button>New ticket</button></Link>
+      <Link to="/"><button>Home</button></Link>
     </div>
   );
 }
